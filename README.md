@@ -22,6 +22,6 @@ Things you may want to cover:
 
 * Run the app:
   * rails server
-  * open http:localhost:3000
+  * open http://localhost:3000
   * click the link "go to events page" to visit events page
 
