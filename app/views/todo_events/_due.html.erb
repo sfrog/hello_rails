@@ -1,0 +1,7 @@
+<div class="event-head">
+  <%= todo_event.actor.name %>
+  将任务完成时间从
+  <%= format_due(todo_event.old_value) %>
+  修改为
+  <%= format_due(todo_event.value) %>：<%= todo_event.todo.title %>
+</div>

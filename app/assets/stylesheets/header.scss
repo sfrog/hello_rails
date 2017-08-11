@@ -1,0 +1,13 @@
+.header {
+  width: 960px;
+  margin: 20px auto;
+
+  .item {
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .active {
+    font-weight: bold;
+  }
+}

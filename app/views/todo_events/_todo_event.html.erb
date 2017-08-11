@@ -1,0 +1,14 @@
+<% cache todo_event do %>
+<div class="event"
+  data-seq="<%= todo_event.id %>"
+  data-created="<%= data_created(todo_event.created_at) %>"
+  data-project="<%= todo_event.project.name %>">
+  <div class="event-time"><%= format_time(todo_event.created_at) %></div>
+  <div class="event-avatar">
+    <img alt="<%= todo_event.actor.name %>" src="<%= todo_event.actor.avatar %>" />
+  </div>
+  <div class="event-main">
+    <%= render "todo_events/#{todo_event.action}", todo_event: todo_event %>
+  </div>
+</div>
+<% end %>

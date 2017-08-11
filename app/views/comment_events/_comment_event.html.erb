@@ -1,0 +1,19 @@
+<% cache comment_event do %>
+<div class="event"
+  data-seq="<%= comment_event.id %>"
+  data-created="<%= data_created(comment_event.created_at) %>"
+  data-project="<%= comment_event.project.name %>">
+  <div class="event-time"><%= format_time(comment_event.created_at) %></div>
+  <div class="event-avatar">
+    <img alt="<%= comment_event.actor.name %>" src="<%= comment_event.actor.avatar %>" />
+  </div>
+  <div class="event-head">
+    <%= comment_event.actor.name %>
+    回复了任务
+    <%= comment_event.commentable.title %>
+  </div>
+  <div class="event-body">
+    <%= comment_event.comment.content %>
+  </div>
+</div>
+<% end %>

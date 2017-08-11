@@ -1,0 +1,8 @@
+<% unless request.xhr? %>
+  <%= render 'filter' %>
+  <div class="events">
+    <%= render @events %>
+  </div>
+<% else %>
+    <%= render @events %>
+<% end %>

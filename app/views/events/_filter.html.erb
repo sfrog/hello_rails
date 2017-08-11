@@ -1,0 +1,5 @@
+<div>
+  <span>筛选动态：</span>
+  <%= select_tag "by_project", options_from_collection_for_select(@team.projects, "id", "name", @by_project), include_blank: "所有项目" %>
+  <%= select_tag "by_member", options_from_collection_for_select(@team.users, "id", "name", @by_member), include_blank: "所有成员" %>
+</div>

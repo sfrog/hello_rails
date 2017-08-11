@@ -1,0 +1,7 @@
+<div class="event-head">
+  <%= todo_event.actor.name %>
+  把
+  <%= user_name(todo_event.old_value) %>
+  的任务指派给
+  <%= user_name(todo_event.value) %>：<%= todo_event.todo.title %>
+</div>
